@@ -152,7 +152,7 @@ public class Main3 {
 		        				 if(parts2[1].length()>0) OpNames.add(parts2[1]);		        				 
 		        			}
 		        		}
-		        	    //System.out.println("parts[0],OpNames == "+ parts[0]+ OpNames);		        		
+		        	    System.out.println("parts[0],OpNames == "+ parts[0]+ OpNames);		        		
 				    }
 		        	if(OpNames.size()>0)
 			        PrmissionSetName_2_OwnedOperations.put(parts[0],OpNames); 	
