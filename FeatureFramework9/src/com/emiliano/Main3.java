@@ -119,7 +119,9 @@ public class Main3 {
 		
 /////////// Build maps for configuring secureUML by modifyXML function/////////////////////////////////////////////////////////////////////////////////////////////////
 		int i=1; Vector <String> PermSets__OwnedOperations= new Vector<String>();
-		Map <String,Vector <String>> PrmissionSetName_2_OwnedOperations = new HashMap<String, Vector<String>>(); Vector <String> OpNames = new Vector();
+		Map <String,Vector <String>> PrmissionSetName_2_OwnedOperations = new HashMap<String, Vector<String>>(); 
+		Map <String,Vector <String>> PrmissionSetName_2_OwnedOperations___2 = new HashMap<String, Vector<String>>(); 
+		Vector <String> OpNames = new Vector();
 		String[] parts,parts2; String beforeFirstDot;
 		//for each configuration take the keys of the Selected values and put them into a Map (, Vector of OwnedOperations)
 		for(Configuration conf2:solutions)
@@ -165,14 +167,24 @@ public class Main3 {
 	        	System.out.println("PrmissionSetName_2_OwnedOperations="+PrmissionSetName_2_OwnedOperations +"\n\n\n");
 	        	
 		        PermSets__OwnedOperations.removeAllElements();
+		        PrmissionSetName_2_OwnedOperations___2=PrmissionSetName_2_OwnedOperations;
 		        PrmissionSetName_2_OwnedOperations.clear();
 			}
+		
+		
+		modifyXML(PrmissionSetName_2_OwnedOperations___2);
 }
-				//modifyXML(permNames, OpNames);
+	
+	
+	
+	public static void modifyXML(Map <String,Vector <String>> map)
+	{
+		//iterate on the map
+	}
 			
 	
 	
-	public static void modifyXML(Vector <String>  PermNames,Vector <String> ownedOperationNames) {
+	public static void modifyXML(Configuration conf, Vector <String>  PermNames,Vector <String> ownedOperationNames) {
 
 		try {
 			XPath xPath; 
