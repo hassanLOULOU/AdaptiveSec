@@ -152,14 +152,18 @@ public class Main3 {
 		        				 if(parts2[1].length()>0) OpNames.add(parts2[1]);		        				 
 		        			}
 		        		}
-		        	    System.out.println("parts[0],OpNames == "+ parts[0]+ OpNames);		        		
+		        	    //System.out.println("parts[0],OpNames == "+ parts[0]+ OpNames);		        		
 				    }
-		        	if(OpNames.size()>0)
-			        PrmissionSetName_2_OwnedOperations.put(parts[0],OpNames); 	
+		        	if(!PrmissionSetName_2_OwnedOperations.keySet().contains(parts[0]) && OpNames.size()>0)
+		        	{
+		        		System.out.println("parts[0] = "+parts[0]+ "    " +"OpNames = "+OpNames);
+			            PrmissionSetName_2_OwnedOperations.put(parts[0],OpNames); 	
+		        	}
 			        OpNames.removeAllElements();
 				 }	
 	        	System.out.println("PrmissionSetName_2_OwnedOperations="+PrmissionSetName_2_OwnedOperations +"\n\n\n");
 		        PermSets__OwnedOperations.removeAllElements();
+		        PrmissionSetName_2_OwnedOperations.clear();
 			}
 }
 				//modifyXML(permNames, OpNames);
