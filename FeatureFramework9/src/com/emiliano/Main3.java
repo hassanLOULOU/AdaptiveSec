@@ -149,7 +149,8 @@ public class Main3 {
 		        			if(PermSets__OwnedOperations.get(k).startsWith(parts[0]))
 		        			{
 		        				 parts2 = PermSets__OwnedOperations.get(k).split("\\_"); // String array, each element is text between dots
-		        				 if(parts2[1].length()>0) OpNames.add(parts2[1]);		        				 
+		        				 if(parts2[1].length()>0) 
+		        					 OpNames.add(parts2[1]);		        				 
 		        			}
 		        		}
 		        	    //System.out.println("parts[0],OpNames == "+ parts[0]+ OpNames);		        		
@@ -157,11 +158,12 @@ public class Main3 {
 		        	if(!PrmissionSetName_2_OwnedOperations.keySet().contains(parts[0]) && OpNames.size()>0)
 		        	{
 		        		System.out.println("parts[0] = "+parts[0]+ "    " +"OpNames = "+OpNames);
-			            PrmissionSetName_2_OwnedOperations.put(parts[0],OpNames); 	
+			            PrmissionSetName_2_OwnedOperations.put(parts[0],(Vector)OpNames.clone()); 	
 		        	}
 			        OpNames.removeAllElements();
 				 }	
 	        	System.out.println("PrmissionSetName_2_OwnedOperations="+PrmissionSetName_2_OwnedOperations +"\n\n\n");
+	        	
 		        PermSets__OwnedOperations.removeAllElements();
 		        PrmissionSetName_2_OwnedOperations.clear();
 			}
