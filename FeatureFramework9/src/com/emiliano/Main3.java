@@ -158,7 +158,7 @@ public class Main3 {
 		        	if(!PrmissionSetName_2_OwnedOperations.keySet().contains(parts[0]) && OpNames.size()>0)
 		        	{
 		        		System.out.println("parts[0] = "+parts[0]+ "    " +"OpNames = "+OpNames);
-			            PrmissionSetName_2_OwnedOperations.put(parts[0],(Vector)OpNames.clone()); 	
+			            PrmissionSetName_2_OwnedOperations.put(parts[0], (Vector)OpNames.clone()); ///solved by clone	
 		        	}
 			        OpNames.removeAllElements();
 				 }	
