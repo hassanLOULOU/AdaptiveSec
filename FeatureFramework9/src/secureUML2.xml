@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:UML_CD_AC_profile="http:///schemas/UML_CD_AC_profile/_3SdtkN38Ed-DE4W08mVfRg/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.1" xsi:schemaLocation="http:///schemas/UML_CD_AC_profile/_3SdtkN38Ed-DE4W08mVfRg/5 file:/C:/HassanBackUP/try1/ws/Selkis_B4MSecure/SelkisProfile/UML_CD_AC_profile.uml#_3Sdtkd38Ed-DE4W08mVfRg">
+  <uml:Model xmi:id="_qb8akM37EdqwVrslYOdUDA">
+    <elementImport xmi:id="_YZOB4GbwEeahbNCKmdAxfg">
+      <importedElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean" xmi:type="uml:PrimitiveType"/>
+    </elementImport>
+    <elementImport xmi:id="_YZP3EGbwEeahbNCKmdAxfg">
+      <importedElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer" xmi:type="uml:PrimitiveType"/>
+    </elementImport>
+    <elementImport xmi:id="_YZP3EWbwEeahbNCKmdAxfg">
+      <importedElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+    </elementImport>
+    <packagedElement name="V2V" xmi:id="_w8IxIM37EdqwVrslYOdUDA" xmi:type="uml:Package">
+      <packagedElement name="Functional" xmi:id="_cRjY0GSUEeahbNCKmdAxfg" xmi:type="uml:Package">
+        <ownedRule name="Constraint1" xmi:id="_dXUJYJzvEeaRkthZ__bnEA">
+          <specification xmi:id="_oL9-wJzvEeaRkthZ__bnEA" xmi:type="uml:StringExpression"/>
+        </ownedRule>
+        <packagedElement name="Vehicle" xmi:id="_R0ZdcGSUEeahbNCKmdAxfg" xmi:type="uml:Class">
+          <ownedAttribute name="ID" xmi:id="_q8w1kGbwEeahbNCKmdAxfg">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer" xmi:type="uml:PrimitiveType"/>
+          </ownedAttribute>
+          <ownedOperation name="LinkRegion" xmi:id="_1DWy0GTGEeahbNCKmdAxfg"/>
+        </packagedElement>
+        <packagedElement name="Region" xmi:id="_UHbQAGSUEeahbNCKmdAxfg" xmi:type="uml:Class">
+          <ownedAttribute name="Name" xmi:id="_jjW_EGbwEeahbNCKmdAxfg">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedAttribute>
+          <ownedAttribute name="Position" xmi:id="_meLxcmbwEeahbNCKmdAxfg">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement name="Diagnoser" xmi:id="_WyfIEGSUEeahbNCKmdAxfg" xmi:type="uml:Class">
+          <ownedAttribute name="ID" xmi:id="_uiQ8oGbwEeahbNCKmdAxfg">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer" xmi:type="uml:PrimitiveType"/>
+          </ownedAttribute>
+          <ownedOperation name="LinkRegion" xmi:id="_2YZTIGTGEeahbNCKmdAxfg"/>
+        </packagedElement>
+        <packagedElement name="CarRecord" xmi:id="_VQABoGSUEeahbNCKmdAxfg" xmi:type="uml:Class">
+          <ownedAttribute name="Data" xmi:id="_TdMz0GbwEeahbNCKmdAxfg">
+            <type href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String" xmi:type="uml:PrimitiveType"/>
+          </ownedAttribute>
+          <ownedOperation name="setCarRecord" xmi:id="_Vs7lsJzxEeaRkthZ__bnEA"/>
+        </packagedElement>
+        <packagedElement memberEnd="_mgQBcWSUEeahbNCKmdAxfg _mgQBdGSUEeahbNCKmdAxfg" name="A_&lt;carRecord&gt;_&lt;diagnoser&gt;" xmi:id="_mgQBcGSUEeahbNCKmdAxfg" xmi:type="uml:Association">
+          <ownedEnd association="_mgQBcGSUEeahbNCKmdAxfg" isUnique="false" name="carRecord" type="_VQABoGSUEeahbNCKmdAxfg" xmi:id="_mgQBcWSUEeahbNCKmdAxfg">
+            <upperValue value="*" xmi:id="_mgQBcmSUEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+            <lowerValue value="1" xmi:id="_mgQBc2SUEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+          </ownedEnd>
+          <ownedEnd association="_mgQBcGSUEeahbNCKmdAxfg" name="diagnoser" type="_WyfIEGSUEeahbNCKmdAxfg" xmi:id="_mgQBdGSUEeahbNCKmdAxfg">
+            <upperValue value="1" xmi:id="_mgQBdWSUEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+            <lowerValue value="1" xmi:id="_mgQBdmSUEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement memberEnd="_wuC_cWTGEeahbNCKmdAxfg _wuC_dGTGEeahbNCKmdAxfg" name="A_&lt;vehicle&gt;_&lt;carRecord&gt;" xmi:id="_wuC_cGTGEeahbNCKmdAxfg" xmi:type="uml:Association">
+          <ownedEnd association="_wuC_cGTGEeahbNCKmdAxfg" isUnique="false" name="vehicle" type="_R0ZdcGSUEeahbNCKmdAxfg" xmi:id="_wuC_cWTGEeahbNCKmdAxfg">
+            <upperValue value="1" xmi:id="_wuC_cmTGEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+            <lowerValue value="1" xmi:id="_wuC_c2TGEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+          </ownedEnd>
+          <ownedEnd association="_wuC_cGTGEeahbNCKmdAxfg" isUnique="false" name="carRecord" type="_VQABoGSUEeahbNCKmdAxfg" xmi:id="_wuC_dGTGEeahbNCKmdAxfg">
+            <upperValue value="1" xmi:id="_wuC_dWTGEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+            <lowerValue value="1" xmi:id="_wuC_dmTGEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement memberEnd="_xNxoYWTGEeahbNCKmdAxfg _xNxoZGTGEeahbNCKmdAxfg" name="A_&lt;vehicle&gt;_&lt;region&gt;" xmi:id="_xNxoYGTGEeahbNCKmdAxfg" xmi:type="uml:Association">
+          <ownedEnd association="_xNxoYGTGEeahbNCKmdAxfg" name="vehicle" type="_R0ZdcGSUEeahbNCKmdAxfg" xmi:id="_xNxoYWTGEeahbNCKmdAxfg">
+            <upperValue value="1" xmi:id="_xNxoYmTGEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+            <lowerValue value="1" xmi:id="_xNxoY2TGEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+          </ownedEnd>
+          <ownedEnd association="_xNxoYGTGEeahbNCKmdAxfg" name="region" type="_UHbQAGSUEeahbNCKmdAxfg" xmi:id="_xNxoZGTGEeahbNCKmdAxfg">
+            <upperValue value="1" xmi:id="_xNxoZWTGEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+            <lowerValue value="1" xmi:id="_xNxoZmTGEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement memberEnd="_xkdDAWTGEeahbNCKmdAxfg _xkdDBGTGEeahbNCKmdAxfg" name="A_&lt;region&gt;_&lt;diagnoser&gt;" xmi:id="_xkdDAGTGEeahbNCKmdAxfg" xmi:type="uml:Association">
+          <ownedEnd association="_xkdDAGTGEeahbNCKmdAxfg" name="region" type="_UHbQAGSUEeahbNCKmdAxfg" xmi:id="_xkdDAWTGEeahbNCKmdAxfg">
+            <upperValue value="1" xmi:id="_xkdDAmTGEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+            <lowerValue value="1" xmi:id="_xkdDA2TGEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+          </ownedEnd>
+          <ownedEnd association="_xkdDAGTGEeahbNCKmdAxfg" name="diagnoser" type="_WyfIEGSUEeahbNCKmdAxfg" xmi:id="_xkdDBGTGEeahbNCKmdAxfg">
+            <upperValue value="1" xmi:id="_xkdDBWTGEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+            <lowerValue value="1" xmi:id="_xkdDBmTGEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement name="RoadCamera" xmi:id="_qi6pUJuBEeaRkthZ__bnEA" xmi:type="uml:Class">
+          <ownedAttribute name="stream" xmi:id="_1dHTwJuGEeaRkthZ__bnEA"/>
+          <ownedOperation name="followMe" xmi:id="_i02YIJuGEeaRkthZ__bnEA"/>
+        </packagedElement>
+        <packagedElement memberEnd="_7rMY4ZuBEeaRkthZ__bnEA _7rMY5JuBEeaRkthZ__bnEA" name="A_&lt;region&gt;_&lt;roadCamera&gt;" xmi:id="_7rMY4JuBEeaRkthZ__bnEA" xmi:type="uml:Association">
+          <ownedEnd association="_7rMY4JuBEeaRkthZ__bnEA" name="region" type="_UHbQAGSUEeahbNCKmdAxfg" xmi:id="_7rMY4ZuBEeaRkthZ__bnEA">
+            <upperValue value="1" xmi:id="_7rMY4puBEeaRkthZ__bnEA" xmi:type="uml:LiteralUnlimitedNatural"/>
+            <lowerValue value="1" xmi:id="_7rMY45uBEeaRkthZ__bnEA" xmi:type="uml:LiteralInteger"/>
+          </ownedEnd>
+          <ownedEnd association="_7rMY4JuBEeaRkthZ__bnEA" isUnique="false" name="roadCamera" type="_qi6pUJuBEeaRkthZ__bnEA" xmi:id="_7rMY5JuBEeaRkthZ__bnEA">
+            <upperValue value="20" xmi:id="_7rMY5ZuBEeaRkthZ__bnEA" xmi:type="uml:LiteralUnlimitedNatural"/>
+            <lowerValue xmi:id="_7rMY5puBEeaRkthZ__bnEA" xmi:type="uml:LiteralInteger"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement name="Vehicle" xmi:id="_mL3zwJuFEeaRkthZ__bnEA" xmi:type="uml:Class"/>
+      </packagedElement>
+      <packagedElement name="Policy" xmi:id="_qBluUGShEeahbNCKmdAxfg" xmi:type="uml:Package">
+        <packagedElement name="CarAC" xmi:id="_OpWVkGTHEeahbNCKmdAxfg" xmi:type="uml:Package"/>
+        <packagedElement name="CarRecordAC" xmi:id="_PutbIGTHEeahbNCKmdAxfg" xmi:type="uml:Package"/>
+        <packagedElement name="Roles" xmi:id="_RstY4GTHEeahbNCKmdAxfg" xmi:type="uml:Package">
+          <packagedElement name="CarStaff" xmi:id="_ZKgnMGTHEeahbNCKmdAxfg" xmi:type="uml:Class"/>
+          <packagedElement name="Diagnoser" xmi:id="_bNqKsGTHEeahbNCKmdAxfg" xmi:type="uml:Class">
+            <generalization general="_ZKgnMGTHEeahbNCKmdAxfg" xmi:id="_h6DKMGTHEeahbNCKmdAxfg"/>
+          </packagedElement>
+          <packagedElement memberEnd="_mK7JgWTHEeahbNCKmdAxfg _mK7JhGTHEeahbNCKmdAxfg" name="CarStaffPerms" xmi:id="_mK7JgGTHEeahbNCKmdAxfg" xmi:type="uml:AssociationClass">
+            <ownedEnd association="_mK7JgGTHEeahbNCKmdAxfg" isUnique="false" name="carStaff" type="_ZKgnMGTHEeahbNCKmdAxfg" xmi:id="_mK7JgWTHEeahbNCKmdAxfg">
+              <upperValue value="*" xmi:id="_mK7JgmTHEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_mK7Jg2THEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+            <ownedEnd association="_mK7JgGTHEeahbNCKmdAxfg" isUnique="false" name="vehicle" type="_R0ZdcGSUEeahbNCKmdAxfg" xmi:id="_mK7JhGTHEeahbNCKmdAxfg">
+              <upperValue value="*" xmi:id="_mK7JhWTHEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_mK7JhmTHEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement memberEnd="_yt2ekWTHEeahbNCKmdAxfg _yt2elGTHEeahbNCKmdAxfg" name="DiagnoserRVehicle" xmi:id="_yt2ekGTHEeahbNCKmdAxfg" xmi:type="uml:AssociationClass">
+            <ownedEnd association="_yt2ekGTHEeahbNCKmdAxfg" isUnique="false" name="diagnoser" type="_bNqKsGTHEeahbNCKmdAxfg" xmi:id="_yt2ekWTHEeahbNCKmdAxfg">
+              <upperValue value="*" xmi:id="_yt2ekmTHEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_yt2ek2THEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+            <ownedEnd association="_yt2ekGTHEeahbNCKmdAxfg" isUnique="false" name="vehicle" type="_R0ZdcGSUEeahbNCKmdAxfg" xmi:id="_yt2elGTHEeahbNCKmdAxfg">
+              <upperValue value="*" xmi:id="_yt2elWTHEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_yt2elmTHEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement memberEnd="_CXOAIWTIEeahbNCKmdAxfg _CXOAJGTIEeahbNCKmdAxfg" name="carRecordPerms" xmi:id="_CXOAIGTIEeahbNCKmdAxfg" xmi:type="uml:AssociationClass">
+            <ownedEnd association="_CXOAIGTIEeahbNCKmdAxfg" isUnique="false" name="carStaff" type="_ZKgnMGTHEeahbNCKmdAxfg" xmi:id="_CXOAIWTIEeahbNCKmdAxfg">
+              <upperValue value="*" xmi:id="_CXOAImTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_CXOAI2TIEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+            <ownedEnd association="_CXOAIGTIEeahbNCKmdAxfg" isUnique="false" name="carRecord" type="_VQABoGSUEeahbNCKmdAxfg" xmi:id="_CXOAJGTIEeahbNCKmdAxfg">
+              <upperValue value="*" xmi:id="_CXOAJWTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_CXOAJmTIEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+          <OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="Create"/></packagedElement>
+          <packagedElement memberEnd="_H-vCQWTIEeahbNCKmdAxfg _H-vCRGTIEeahbNCKmdAxfg" name="DiagCarPerms" xmi:id="_H-vCQGTIEeahbNCKmdAxfg" xmi:type="uml:AssociationClass">
+            <ownedRule constrainedElement="_H-vCQGTIEeahbNCKmdAxfg" name="newConstraint" xmi:id="_xS4f8JzvEeaRkthZ__bnEA">
+              <ownedComment annotatedElement="_xS4f8JzvEeaRkthZ__bnEA" xmi:id="_xS4f8ZzvEeaRkthZ__bnEA">
+                <body>A_&lt;vehicle&gt;_&lt;region&gt; is modified</body>
+              </ownedComment>
+              <specification name="newConstraint_body" xmi:id="_xS4f8pzvEeaRkthZ__bnEA" xmi:type="uml:OpaqueExpression">
+                <language>OCL</language>
+                <body>-- constraint for Class DiagCarPerms
+inv : -- insert invariant</body>
+              </specification>
+            </ownedRule>
+            <ownedEnd association="_H-vCQGTIEeahbNCKmdAxfg" isUnique="false" name="diagnoser" type="_bNqKsGTHEeahbNCKmdAxfg" xmi:id="_H-vCQWTIEeahbNCKmdAxfg">
+              <upperValue value="*" xmi:id="_H-vCQmTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_H-vCQ2TIEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+            <ownedEnd association="_H-vCQGTIEeahbNCKmdAxfg" isUnique="false" name="carRecord" type="_VQABoGSUEeahbNCKmdAxfg" xmi:id="_H-vCRGTIEeahbNCKmdAxfg">
+              <upperValue value="*" xmi:id="_H-vCRWTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_H-vCRmTIEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement memberEnd="_lm0hcWTIEeahbNCKmdAxfg _lm0hdGTIEeahbNCKmdAxfg" name="diagPerms2" xmi:id="_lm0hcGTIEeahbNCKmdAxfg" xmi:type="uml:AssociationClass">
+            <ownedEnd association="_lm0hcGTIEeahbNCKmdAxfg" isUnique="false" name="diagnoser" type="_bNqKsGTHEeahbNCKmdAxfg" xmi:id="_lm0hcWTIEeahbNCKmdAxfg">
+              <upperValue value="*" xmi:id="_lm0hcmTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_lm0hc2TIEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+            <ownedEnd association="_lm0hcGTIEeahbNCKmdAxfg" isUnique="false" name="diagnoser" type="_WyfIEGSUEeahbNCKmdAxfg" xmi:id="_lm0hdGTIEeahbNCKmdAxfg">
+              <upperValue value="*" xmi:id="_lm0hdWTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_lm0hdmTIEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement name="Vehicle" xmi:id="_cBW6wJw5EeaRkthZ__bnEA" xmi:type="uml:Class"/>
+        </packagedElement>
+        <packagedElement name="DiagnoserAC" xmi:id="_SXNucGTHEeahbNCKmdAxfg" xmi:type="uml:Package"/>
+        <packagedElement name="RoadCameraAC" xmi:id="_ErficJuHEeaRkthZ__bnEA" xmi:type="uml:Package">
+          <packagedElement name="Vehicle" xmi:id="_Slh0YJuHEeaRkthZ__bnEA" xmi:type="uml:Class"/>
+          <packagedElement memberEnd="_WHVHMZuHEeaRkthZ__bnEA _WHVHNJuHEeaRkthZ__bnEA" name="VCPerms" xmi:id="_WHVHMJuHEeaRkthZ__bnEA" xmi:type="uml:AssociationClass">
+            <ownedEnd association="_WHVHMJuHEeaRkthZ__bnEA" isUnique="false" name="vehicle" type="_Slh0YJuHEeaRkthZ__bnEA" xmi:id="_WHVHMZuHEeaRkthZ__bnEA">
+              <upperValue value="*" xmi:id="_WHVHMpuHEeaRkthZ__bnEA" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_WHVHM5uHEeaRkthZ__bnEA" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+            <ownedEnd association="_WHVHMJuHEeaRkthZ__bnEA" isUnique="false" name="roadCamera" type="_qi6pUJuBEeaRkthZ__bnEA" xmi:id="_WHVHNJuHEeaRkthZ__bnEA">
+              <upperValue value="*" xmi:id="_WHVHNZuHEeaRkthZ__bnEA" xmi:type="uml:LiteralUnlimitedNatural"/>
+              <lowerValue xmi:id="_WHVHNpuHEeaRkthZ__bnEA" xmi:type="uml:LiteralInteger"/>
+            </ownedEnd>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_fhmsIGTHEeahbNCKmdAxfg">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_fh3x4GTHEeahbNCKmdAxfg">
+        <references href="file:/C:/HassanBackUP/try1/ws/Selkis_B4MSecure/SelkisProfile/UML_CD_AC_profile.uml#_3Sdtkd38Ed-DE4W08mVfRg" xmi:type="ecore:EPackage"/>
+      </eAnnotations>
+      <appliedProfile href="file:/C:/HassanBackUP/try1/ws/Selkis_B4MSecure/SelkisProfile/UML_CD_AC_profile.uml#__XqpYEucEd-CqrFOuMEbzg"/>
+    </profileApplication>
+  </uml:Model>
+  <UML_CD_AC_profile:Role base_Class="_ZKgnMGTHEeahbNCKmdAxfg" xmi:id="_g20LkGTHEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:Role base_Class="_bNqKsGTHEeahbNCKmdAxfg" xmi:id="_hRU9UGTHEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:Permission base_AssociationClass="_mK7JgGTHEeahbNCKmdAxfg" xmi:id="_tuoLgGTHEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:Permission base_AssociationClass="_yt2ekGTHEeahbNCKmdAxfg" xmi:id="_22nqwGTHEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:Permission base_AssociationClass="_CXOAIGTIEeahbNCKmdAxfg" xmi:id="_E7nPgGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:Permission base_AssociationClass="_H-vCQGTIEeahbNCKmdAxfg" xmi:id="_LuhGsGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:EntityAction base_Operation="_PXvQIGTIEeahbNCKmdAxfg" xmi:id="_Qp0jEGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:EntityAction base_Operation="_Sy_PAGTIEeahbNCKmdAxfg" xmi:id="_VpgJIGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:EntityAction base_Operation="_UL90IGTIEeahbNCKmdAxfg" xmi:id="_WQVfoGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:Permission base_AssociationClass="_lm0hcGTIEeahbNCKmdAxfg" xmi:id="_q_6GAGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:MethodAction base_Operation="_sRseAGTIEeahbNCKmdAxfg" xmi:id="_tsb9sGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:EntityAction base_Operation="_KVexAm6pEeaQM9XOZUNTlw" xmi:id="_OHiGUG6pEeaQM9XOZUNTlw"/>
+  <UML_CD_AC_profile:EntityAction base_Operation="_LeiDwm6pEeaQM9XOZUNTlw" xmi:id="_OHiGUW6pEeaQM9XOZUNTlw"/>
+  <UML_CD_AC_profile:MethodAction base_Operation="_Q7KrkW6pEeaQM9XOZUNTlw" xmi:id="_SWNtQG6pEeaQM9XOZUNTlw"/>
+  <UML_CD_AC_profile:MethodAction base_Operation="_tA16AJEdEeawTM3qNY1yZA" xmi:id="_xuzd8JEdEeawTM3qNY1yZA"/>
+  <UML_CD_AC_profile:Role xmi:id="_NrBesJuGEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:Permission xmi:id="_RTsOgJuGEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:MethodAction xmi:id="_b4IdoJuGEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:Role xmi:id="_pffEIJuGEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:MethodAction xmi:id="_w3l6IJuGEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:Role base_Class="_Slh0YJuHEeaRkthZ__bnEA" xmi:id="_TnBtoJuHEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:Permission base_AssociationClass="_WHVHMJuHEeaRkthZ__bnEA" xmi:id="_YK8kwJuHEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:EntityAction base_Operation="_aPw8MJuHEeaRkthZ__bnEA" xmi:id="_bbXMoJuHEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:MethodAction base_Operation="_cuKRQJuHEeaRkthZ__bnEA" xmi:id="_ehrdUJuHEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:Role base_Class="_cBW6wJw5EeaRkthZ__bnEA" xmi:id="_dKbboJw5EeaRkthZ__bnEA"/>
+</xmi:XMI>
