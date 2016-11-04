@@ -1,6 +1,7 @@
 package com.emiliano;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.Vector;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -20,6 +22,7 @@ import javax.xml.xpath.XPathFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import org.xml.sax.SAXException;
 
 import com.emiliano.fmframework.core.Configuration;
 import com.emiliano.fmframework.core.Feature;
@@ -181,6 +184,24 @@ public class Main3 {
 	public static void modifyXML2(Map <String,Vector <String>> map)
 	{
 		Document document =null;
+	    // Create a document by parsing a XML file
+	    DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
+	    DocumentBuilder builder = null;
+		try {
+			builder = builderFactory.newDocumentBuilder();
+		} catch (ParserConfigurationException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	    try {
+			document = builder.parse(new File("C:/Users/hassan.loulou/git/SelfAdpativeSecurity/FeatureFramework9/src/secureUML1.xml"));
+		} catch (SAXException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		System.out.println("Mooooooodify document Object");
 		//iterate on the map
 		for (Map.Entry<String, Vector <String>> entry : map.entrySet()) 
@@ -189,7 +210,7 @@ public class Main3 {
 				/*if (entry.getValue().toString().equals("S") && entry.getKey().toString().contains("_")){
 					      PermSets__OwnedOperations.add(entry.getKey().toString());							
 					    }	*/							
-                document = modifyXML(entry.getKey(),entry.getValue());
+                document = modifyXML(entry.getKey(),entry.getValue(),document);
 		}
 		System.out.println("/Mooooooodify");
 		
@@ -204,17 +225,13 @@ public class Main3 {
 	}			
 	
 	
-	public static Document modifyXML( String  PermName,Vector <String> ownedOperationNames) {
-		Document document = null;
+	public static Document modifyXML( String  PermName,Vector <String> ownedOperationNames, Document document) {
 		try {
 			XPath xPath; 
 			String expression; 
 			Node node;
 
-		    // Create a document by parsing a XML file
-		    DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
-		    DocumentBuilder builder = builderFactory.newDocumentBuilder();
-		    document = builder.parse(new File("C:/Users/hassan.loulou/git/SelfAdpativeSecurity/FeatureFramework9/src/secureUML1.xml"));
+
 
 
 		    // Get a node using XPath

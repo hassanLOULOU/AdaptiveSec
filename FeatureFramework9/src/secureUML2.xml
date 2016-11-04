@@ -123,7 +123,7 @@
               <upperValue value="*" xmi:id="_yt2elWTHEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
               <lowerValue xmi:id="_yt2elmTHEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
             </ownedEnd>
-          </packagedElement>
+          <OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="vehicleAttachementIsModifiedSince"/><OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="LinkRegion"/></packagedElement>
           <packagedElement memberEnd="_CXOAIWTIEeahbNCKmdAxfg _CXOAJGTIEeahbNCKmdAxfg" name="carRecordPerms" xmi:id="_CXOAIGTIEeahbNCKmdAxfg" xmi:type="uml:AssociationClass">
             <ownedEnd association="_CXOAIGTIEeahbNCKmdAxfg" isUnique="false" name="carStaff" type="_ZKgnMGTHEeahbNCKmdAxfg" xmi:id="_CXOAIWTIEeahbNCKmdAxfg">
               <upperValue value="*" xmi:id="_CXOAImTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
@@ -133,7 +133,7 @@
               <upperValue value="*" xmi:id="_CXOAJWTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
               <lowerValue xmi:id="_CXOAJmTIEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
             </ownedEnd>
-          <OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="Create"/></packagedElement>
+          <OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="Create"/><OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="Read"/></packagedElement>
           <packagedElement memberEnd="_H-vCQWTIEeahbNCKmdAxfg _H-vCRGTIEeahbNCKmdAxfg" name="DiagCarPerms" xmi:id="_H-vCQGTIEeahbNCKmdAxfg" xmi:type="uml:AssociationClass">
             <ownedRule constrainedElement="_H-vCQGTIEeahbNCKmdAxfg" name="newConstraint" xmi:id="_xS4f8JzvEeaRkthZ__bnEA">
               <ownedComment annotatedElement="_xS4f8JzvEeaRkthZ__bnEA" xmi:id="_xS4f8ZzvEeaRkthZ__bnEA">
@@ -153,7 +153,7 @@ inv : -- insert invariant</body>
               <upperValue value="*" xmi:id="_H-vCRWTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
               <lowerValue xmi:id="_H-vCRmTIEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
             </ownedEnd>
-          </packagedElement>
+          <OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="NotRegionWithoutChangedInfoCons"/></packagedElement>
           <packagedElement memberEnd="_lm0hcWTIEeahbNCKmdAxfg _lm0hdGTIEeahbNCKmdAxfg" name="diagPerms2" xmi:id="_lm0hcGTIEeahbNCKmdAxfg" xmi:type="uml:AssociationClass">
             <ownedEnd association="_lm0hcGTIEeahbNCKmdAxfg" isUnique="false" name="diagnoser" type="_bNqKsGTHEeahbNCKmdAxfg" xmi:id="_lm0hcWTIEeahbNCKmdAxfg">
               <upperValue value="*" xmi:id="_lm0hcmTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
@@ -163,8 +163,8 @@ inv : -- insert invariant</body>
               <upperValue value="*" xmi:id="_lm0hdWTIEeahbNCKmdAxfg" xmi:type="uml:LiteralUnlimitedNatural"/>
               <lowerValue xmi:id="_lm0hdmTIEeahbNCKmdAxfg" xmi:type="uml:LiteralInteger"/>
             </ownedEnd>
-          </packagedElement>
-          <packagedElement name="Vehicle" xmi:id="_cBW6wJw5EeaRkthZ__bnEA" xmi:type="uml:Class"/>
+          <OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="LinkRegion"/></packagedElement>
+          <packagedElement name="Vehicle" xmi:id="_cBW6wJw5EeaRkthZ__bnEA" xmi:type="uml:Class"><OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="LinkRegion"/></packagedElement>
         </packagedElement>
         <packagedElement name="DiagnoserAC" xmi:id="_SXNucGTHEeahbNCKmdAxfg" xmi:type="uml:Package"/>
         <packagedElement name="RoadCameraAC" xmi:id="_ErficJuHEeaRkthZ__bnEA" xmi:type="uml:Package">
@@ -178,7 +178,7 @@ inv : -- insert invariant</body>
               <upperValue value="*" xmi:id="_WHVHNZuHEeaRkthZ__bnEA" xmi:type="uml:LiteralUnlimitedNatural"/>
               <lowerValue xmi:id="_WHVHNpuHEeaRkthZ__bnEA" xmi:type="uml:LiteralInteger"/>
             </ownedEnd>
-          </packagedElement>
+          <OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="Read"/><OwnedOperation id="_Q7KrkW6pEeaQM9XOZUNTlw" name="followMe"/></packagedElement>
         </packagedElement>
       </packagedElement>
     </packagedElement>
