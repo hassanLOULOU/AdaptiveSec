@@ -168,24 +168,44 @@ public class Main3 {
 	        	
 		        PermSets__OwnedOperations.removeAllElements();
 		        PrmissionSetName_2_OwnedOperations___2=PrmissionSetName_2_OwnedOperations;
-		        PrmissionSetName_2_OwnedOperations.clear();
+		        //PrmissionSetName_2_OwnedOperations.clear();
+		        break;
 			}
 		
 		
-		modifyXML(PrmissionSetName_2_OwnedOperations___2);
+		modifyXML2(PrmissionSetName_2_OwnedOperations___2);
 }
 	
 	
 	
-	public static void modifyXML(Map <String,Vector <String>> map)
+	public static void modifyXML2(Map <String,Vector <String>> map)
 	{
+		Document document =null;
+		System.out.println("Mooooooodify document Object");
 		//iterate on the map
-	}
-			
+		for (Map.Entry<String, Vector <String>> entry : map.entrySet()) 
+		{
+				System.out.println( entry.getKey() + "  :  " + entry.getValue());
+				/*if (entry.getValue().toString().equals("S") && entry.getKey().toString().contains("_")){
+					      PermSets__OwnedOperations.add(entry.getKey().toString());							
+					    }	*/							
+                document = modifyXML(entry.getKey(),entry.getValue());
+		}
+		System.out.println("/Mooooooodify");
+		
+	    // Write changes to a file
+		try{
+			Transformer transformer = TransformerFactory.newInstance().newTransformer();
+			transformer.transform(new DOMSource(document), new StreamResult(new File("C:/Users/hassan.loulou/git/SelfAdpativeSecurity/FeatureFramework9/src/secureUML1.xml")));
+		}
+		catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+	}			
 	
 	
-	public static void modifyXML(Configuration conf, Vector <String>  PermNames,Vector <String> ownedOperationNames) {
-
+	public static Document modifyXML( String  PermName,Vector <String> ownedOperationNames) {
+		Document document = null;
 		try {
 			XPath xPath; 
 			String expression; 
@@ -194,10 +214,9 @@ public class Main3 {
 		    // Create a document by parsing a XML file
 		    DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
 		    DocumentBuilder builder = builderFactory.newDocumentBuilder();
-		    Document document = builder.parse(new File("C:/Users/hassan.loulou/workspace/FeatureFramework5/src/secureUML1.xml"));
+		    document = builder.parse(new File("C:/Users/hassan.loulou/git/SelfAdpativeSecurity/FeatureFramework9/src/secureUML2.xml"));
 
-		    for(String PermName : PermNames)
-		    {
+
 		    // Get a node using XPath
 		     xPath = XPathFactory.newInstance().newXPath();
 		     expression = "/XMI/Model/packagedElement/packagedElement/packagedElement/packagedElement[@name='"+PermName+"']";
@@ -212,14 +231,13 @@ public class Main3 {
 		    
 		    // Add node
             node.appendChild(ownedOperation);
-		    }
-		    }
-		    // Write changes to a file
-		    Transformer transformer = TransformerFactory.newInstance().newTransformer();
-		    transformer.transform(new DOMSource(document), new StreamResult(new File("C:/Users/hassan.loulou/workspace/FeatureFramework5/src/secureUML2.xml")));
+            System.out.println("Passed");
 
+		    }
 		} catch (Exception e) {
             e.printStackTrace();
+            System.out.println("Problem Here");
 		}
+	    return document;
 	}
 }
