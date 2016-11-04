@@ -66,8 +66,8 @@ public class Main3 {
 		model.addFeature(new Feature("DiagnoserRVehicle_vehicleAttachementIsModifiedSince"));
 		model.addFeature(new Feature("Vehicle_LinkRegion"));
 		model.addFeature(new Feature("DiagCarPerms_Modify"));
-		model.addFeature(new Feature("CarRecordPerms_Read"));
-		model.addFeature(new Feature("CarRecordPerms_Create"));
+		model.addFeature(new Feature("carRecordPerms_Read"));
+		model.addFeature(new Feature("carRecordPerms_Create"));
 		model.addFeature(new Feature("DiagCarPerms_RegionWithoutChangedInfoCons"));
 		model.addFeature(new Feature("DiagCarPerms_NotRegionWithChangedInfoCons"));
 		model.addFeature(new Feature("DiagCarPerms_NotRegionWithoutChangedInfoCons"));
@@ -81,8 +81,8 @@ public class Main3 {
 		model.addTreeConstraint(new OptionalFeature("Vehicle","DiagnoserRVehicle_vehicleAttachementIsModifiedSince"));
 		model.addTreeConstraint(new OptionalFeature("Vehicle","Vehicle_LinkRegion"));
 		
-		model.addTreeConstraint(new MandatoryFeature("CarRecord","CarRecordPerms_Create"));
-		model.addTreeConstraint(new MandatoryFeature("CarRecord","CarRecordPerms_Read"));
+		model.addTreeConstraint(new MandatoryFeature("CarRecord","carRecordPerms_Create"));
+		model.addTreeConstraint(new MandatoryFeature("CarRecord","carRecordPerms_Read"));
 		model.addTreeConstraint(new OptionalFeature("CarRecord","DiagCarPerms_Modify"));
 		model.addTreeConstraint(new OptionalFeature("CarRecord","DiagCarPerms_RegionWithoutChangedInfoCons"));
 		model.addTreeConstraint(new OptionalFeature("CarRecord","DiagCarPerms_NotRegionWithChangedInfoCons"));
@@ -196,7 +196,7 @@ public class Main3 {
 	    // Write changes to a file
 		try{
 			Transformer transformer = TransformerFactory.newInstance().newTransformer();
-			transformer.transform(new DOMSource(document), new StreamResult(new File("C:/Users/hassan.loulou/git/SelfAdpativeSecurity/FeatureFramework9/src/secureUML1.xml")));
+			transformer.transform(new DOMSource(document), new StreamResult(new File("C:/Users/hassan.loulou/git/SelfAdpativeSecurity/FeatureFramework9/src/secureUML2.xml")));
 		}
 		catch(Exception e){
 			System.out.println(e.getMessage());
@@ -214,7 +214,7 @@ public class Main3 {
 		    // Create a document by parsing a XML file
 		    DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
 		    DocumentBuilder builder = builderFactory.newDocumentBuilder();
-		    document = builder.parse(new File("C:/Users/hassan.loulou/git/SelfAdpativeSecurity/FeatureFramework9/src/secureUML2.xml"));
+		    document = builder.parse(new File("C:/Users/hassan.loulou/git/SelfAdpativeSecurity/FeatureFramework9/src/secureUML1.xml"));
 
 
 		    // Get a node using XPath
