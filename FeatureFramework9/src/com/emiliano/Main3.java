@@ -171,17 +171,17 @@ public class Main3 {
 	        	
 		        PermSets__OwnedOperations.removeAllElements();
 		        PrmissionSetName_2_OwnedOperations___2=PrmissionSetName_2_OwnedOperations;
-		        //PrmissionSetName_2_OwnedOperations.clear();
-		        break;
+		        //break;
+				modifyXML2(PrmissionSetName_2_OwnedOperations___2,i-1);
+		        PrmissionSetName_2_OwnedOperations.clear();
 			}
 		
 		
-		modifyXML2(PrmissionSetName_2_OwnedOperations___2);
+
 }
+		
 	
-	
-	
-	public static void modifyXML2(Map <String,Vector <String>> map)
+	public static void modifyXML2(Map <String,Vector <String>> map,int i)
 	{
 		Document document =null;
 	    // Create a document by parsing a XML file
@@ -217,7 +217,7 @@ public class Main3 {
 	    // Write changes to a file
 		try{
 			Transformer transformer = TransformerFactory.newInstance().newTransformer();
-			transformer.transform(new DOMSource(document), new StreamResult(new File("C:/Users/hassan.loulou/git/SelfAdpativeSecurity/FeatureFramework9/src/secureUML2.xml")));
+			transformer.transform(new DOMSource(document), new StreamResult(new File("C:/Users/hassan.loulou/git/SelfAdpativeSecurity/FeatureFramework9/src/secureUMLRes"+i+".xml")));
 		}
 		catch(Exception e){
 			System.out.println(e.getMessage());
@@ -248,7 +248,7 @@ public class Main3 {
 		    
 		    // Add node
             node.appendChild(ownedOperation);
-            System.out.println("Passed");
+            //System.out.println("Passed");
 
 		    }
 		} catch (Exception e) {

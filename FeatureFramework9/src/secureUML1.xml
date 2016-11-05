@@ -195,15 +195,15 @@
   <UML_CD_AC_profile:Permission xmi:id="_22nqwGTHEeahbNCKmdAxfg" base_AssociationClass="_yt2ekGTHEeahbNCKmdAxfg"/>
   <UML_CD_AC_profile:Permission xmi:id="_E7nPgGTIEeahbNCKmdAxfg" base_AssociationClass="_CXOAIGTIEeahbNCKmdAxfg"/>
   <UML_CD_AC_profile:Permission xmi:id="_LuhGsGTIEeahbNCKmdAxfg" base_AssociationClass="_H-vCQGTIEeahbNCKmdAxfg"/>
-  <UML_CD_AC_profile:EntityAction xmi:id="_Qp0jEGTIEeahbNCKmdAxfg" base_Operation="_PXvQIGTIEeahbNCKmdAxfg"/>
-  <UML_CD_AC_profile:EntityAction xmi:id="_VpgJIGTIEeahbNCKmdAxfg" base_Operation="_Sy_PAGTIEeahbNCKmdAxfg"/>
-  <UML_CD_AC_profile:EntityAction xmi:id="_WQVfoGTIEeahbNCKmdAxfg" base_Operation="_UL90IGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:EntityAction xmi:id="_Qp0jEGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:EntityAction xmi:id="_VpgJIGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:EntityAction xmi:id="_WQVfoGTIEeahbNCKmdAxfg"/>
   <UML_CD_AC_profile:Permission xmi:id="_q_6GAGTIEeahbNCKmdAxfg" base_AssociationClass="_lm0hcGTIEeahbNCKmdAxfg"/>
-  <UML_CD_AC_profile:MethodAction xmi:id="_tsb9sGTIEeahbNCKmdAxfg" base_Operation="_sRseAGTIEeahbNCKmdAxfg"/>
-  <UML_CD_AC_profile:EntityAction xmi:id="_OHiGUG6pEeaQM9XOZUNTlw" base_Operation="_KVexAm6pEeaQM9XOZUNTlw"/>
-  <UML_CD_AC_profile:EntityAction xmi:id="_OHiGUW6pEeaQM9XOZUNTlw" base_Operation="_LeiDwm6pEeaQM9XOZUNTlw"/>
-  <UML_CD_AC_profile:MethodAction xmi:id="_SWNtQG6pEeaQM9XOZUNTlw" base_Operation="_Q7KrkW6pEeaQM9XOZUNTlw"/>
-  <UML_CD_AC_profile:MethodAction xmi:id="_xuzd8JEdEeawTM3qNY1yZA" base_Operation="_tA16AJEdEeawTM3qNY1yZA"/>
+  <UML_CD_AC_profile:MethodAction xmi:id="_tsb9sGTIEeahbNCKmdAxfg"/>
+  <UML_CD_AC_profile:EntityAction xmi:id="_OHiGUG6pEeaQM9XOZUNTlw"/>
+  <UML_CD_AC_profile:EntityAction xmi:id="_OHiGUW6pEeaQM9XOZUNTlw"/>
+  <UML_CD_AC_profile:MethodAction xmi:id="_SWNtQG6pEeaQM9XOZUNTlw"/>
+  <UML_CD_AC_profile:MethodAction xmi:id="_xuzd8JEdEeawTM3qNY1yZA"/>
   <UML_CD_AC_profile:Role xmi:id="_NrBesJuGEeaRkthZ__bnEA"/>
   <UML_CD_AC_profile:Permission xmi:id="_RTsOgJuGEeaRkthZ__bnEA"/>
   <UML_CD_AC_profile:MethodAction xmi:id="_b4IdoJuGEeaRkthZ__bnEA"/>
@@ -211,7 +211,7 @@
   <UML_CD_AC_profile:MethodAction xmi:id="_w3l6IJuGEeaRkthZ__bnEA"/>
   <UML_CD_AC_profile:Role xmi:id="_TnBtoJuHEeaRkthZ__bnEA" base_Class="_Slh0YJuHEeaRkthZ__bnEA"/>
   <UML_CD_AC_profile:Permission xmi:id="_YK8kwJuHEeaRkthZ__bnEA" base_AssociationClass="_WHVHMJuHEeaRkthZ__bnEA"/>
-  <UML_CD_AC_profile:EntityAction xmi:id="_bbXMoJuHEeaRkthZ__bnEA" base_Operation="_aPw8MJuHEeaRkthZ__bnEA"/>
-  <UML_CD_AC_profile:MethodAction xmi:id="_ehrdUJuHEeaRkthZ__bnEA" base_Operation="_cuKRQJuHEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:EntityAction xmi:id="_bbXMoJuHEeaRkthZ__bnEA"/>
+  <UML_CD_AC_profile:MethodAction xmi:id="_ehrdUJuHEeaRkthZ__bnEA"/>
   <UML_CD_AC_profile:Role xmi:id="_dKbboJw5EeaRkthZ__bnEA" base_Class="_cBW6wJw5EeaRkthZ__bnEA"/>
 </xmi:XMI>
